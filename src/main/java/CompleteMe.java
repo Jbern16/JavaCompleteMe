@@ -21,8 +21,6 @@ public class CompleteMe {
         insert(word, nextIndex, nextNode);
     }
   }
-
-  
 }
   // public static void main(String args[]) 
   //   CompleteMe cm = new CompleteMe();
