@@ -14,11 +14,18 @@ public class CompleteMe {
     
     if (!currentNode.children.containsKey(chr)) {
         currentNode.children.put(chr, new Node());
+        flagWord(word.length(), index + 1, currentNode);
     } 
     if (index < word.length() - 1) {
         int nextIndex = index + 1;
         Node nextNode = currentNode.children.get(chr);  
         insert(word, nextIndex, nextNode);
+    }
+  }
+  
+  private void flagWord(int length, int indexAtOne, Node currentNode) {
+    if (indexAtOne == length) {
+      currentNode.endOfWord = true;
     }
   }
 }

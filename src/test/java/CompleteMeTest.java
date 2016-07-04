@@ -31,4 +31,13 @@ public class CompleteMeTest {
     Node nodeFive = nodeFour.children.get("z");
     assertEquals(true, nodeFive.children.containsKey("a"));
   }
+
+  public void testWordEndIsFlagged() {
+    cm.insert("piz");
+    Node node = cm.head;
+    Node nodeTwo = node.children.get("p");
+    Node nodeThree = nodeTwo.children.get("i");
+
+    assertEquals(true, nodeThree.endOfWord);
+  }
 }
