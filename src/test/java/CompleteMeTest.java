@@ -12,9 +12,23 @@ public class CompleteMeTest {
     assertThat(cm.head, instanceOf(Node.class));
   }
 
-  // @Test
-  // public void testInsertNode() {
-  //   trie.insert("pizza");
-  //   assertEquals(true, trie.head.child.containsKey(String "p"))
-  // }
+  @Test
+  public void testInsertNode() {
+    cm.insert("pizza");
+
+    Node node = cm.head;
+    assertEquals(true, node.children.containsKey("p"));
+
+    Node nodeTwo = node.children.get("p");
+    assertEquals(true, nodeTwo.children.containsKey("i"));
+
+    Node nodeThree = nodeTwo.children.get("i");
+    assertEquals(true, nodeThree.children.containsKey("z"));
+
+    Node nodeFour = nodeThree.children.get("z");
+    assertEquals(true, nodeFour.children.containsKey("z"));
+
+    Node nodeFive = nodeFour.children.get("z");
+    assertEquals(true, nodeFive.children.containsKey("a"));
+  }
 }

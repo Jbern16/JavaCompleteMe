@@ -12,6 +12,6 @@ public class NodeTest {
 
   @Test
   public void testNodeConstructedWithChild() {
-    assertEquals("{}", node.child.toString());
+    assertEquals("{}", node.children.toString());
   }
 }

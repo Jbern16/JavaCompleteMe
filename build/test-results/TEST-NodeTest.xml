@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NodeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-07-03T22:32:14" hostname="Jonathans-MacBook-Pro.local" time="0.0">
+<testsuite name="NodeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-07-04T01:30:59" hostname="Jonathans-MacBook-Pro.local" time="0.001">
   <properties/>
-  <testcase name="testNodeInitializedWithEndOfWordFlag" classname="NodeTest" time="0.0"/>
+  <testcase name="testNodeInitializedWithEndOfWordFlag" classname="NodeTest" time="0.001"/>
   <testcase name="testNodeConstructedWithChild" classname="NodeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
